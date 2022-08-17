@@ -9,7 +9,7 @@ import path from "path";
 
 dotenv.config();
 mongoose.connect(process.env.MONGODB_URI)
-.then( ()=> { console.log('connected to db');
+.then( ()=> { console.log('connected to db successfully.');
 }).catch( (err) =>{
     console.log(err.message);
 })
